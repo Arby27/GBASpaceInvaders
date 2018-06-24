@@ -1,0 +1,6 @@
+#define MOD_IMPERIALMARCH	0
+#define MOD_SOUNDEFFECTS	1
+#define MOD_TEST	2
+#define MSL_NSONGS	3
+#define MSL_NSAMPS	93
+#define MSL_BANKSIZE	96
