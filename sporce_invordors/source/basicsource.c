@@ -101,7 +101,7 @@ character[i] = charData[i];
 }
 
 unsigned short* tagMap = (unsigned short*) 0x060040C6;
-
+#region TEXT BLOCKS
 //New
 tagMap[0] = (14<<0)|(0<<10)|(0<<11)|(0<<12)|(0<<13)|(0<<14)|(0<<15);
 tagMap[1] = (5<<0)|(0<<10)|(0<<11)|(0<<12)|(0<<13)|(0<<14)|(0<<15);
@@ -222,8 +222,9 @@ Controls3[9] = (15<<0)|(0<<10)|(0<<11)|(0<<12)|(0<<13)|(0<<14)|(0<<15);
 Controls3[10] = (22<<0)|(0<<10)|(0<<11)|(0<<12)|(0<<13)|(0<<14)|(0<<15);
 Controls3[11] = (5<<0)|(0<<10)|(0<<11)|(0<<12)|(0<<13)|(0<<14)|(0<<15);
 
-
+#endregion END of Text
 unsigned short* palette = (unsigned short*) 0x05000000;
+#region colour palettes
 //BG palette 1
 palette[1]= (31<<0);
 palette[2]= (31<<5);
@@ -245,7 +246,7 @@ OBJPalette[8] =(31<<0)|(15<<10);
 OBJPalette[9] =(31<<5)|(15<<10);
 OBJPalette[11] =(31<<0)|(31<<5)|(31<<10);
 
-
+#endregion END of colour palettes
 
 unsigned int* sprite = (unsigned int*) 0x06010000;
 for(int i = 0; i<8;i++)
